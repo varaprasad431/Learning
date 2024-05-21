@@ -1,0 +1,79 @@
+   1  yum install docker -y
+    2  docker -v
+    3  docker version
+    4  systemctl start docker service
+    5  systemctl status docker service
+    6  systemctl restart docker.service
+    7  systemctl status docker service
+    8  docker version
+    9  systemctl status docker service
+   10  docker pull nginx
+   11  docker images
+   12  docker pull ubuntu
+   13  docker images
+   14  docker run ubuntu
+   15  docker run nginx
+   16  docker ps
+   17  docker ps -a
+   18  docker run --name prasad ubuntu
+   19  docker ps -a
+   20  docker run -it --name prasad1 ubuntu
+   21  docker ps
+   22  docker commit prasad1 Zomoto:v1
+   23  docker commit prasad1 zomoto:v1
+   24  docker images
+   25  docker run -it --name prasad2 zomoto:v1
+   26  docker ps
+   27  vim Dockerfile
+   28  ls
+   29  docker build -t zomoto:v2
+   30  docker buildx build -t zomoto:v2
+   31  docker buildx build -t zomoto:v2 .
+   32  docker images
+   33  docker buildx build -t zomoto:v2 .
+   34  vi Dockerfile
+   35  docker buildx build -t zomoto:v2 .
+   36  vi Dockerfile
+   37  docker buildx build -t zomoto:v2 .
+   38  docker images
+   39  docker run -it --name prasad3 zomoto:v2 /bin/bash
+   40  vi Dockerfile
+   41  docker run -it --name prasad4 zomoto:v2
+   42  mysql -v
+   43  mysql version
+   44  mysql -version
+   45  mysql -version
+   46  vim index.html
+   47  vi Dockerfile
+   48  ll
+   49  vi Dockerfile
+   50  Docker buildx built -t zomoto:v3
+   51  docker buildx built -t zomoto:v3
+   52  docker build -t zomoto:v3 .
+   53  docker run -it --name prasad5 zomoto:v3
+   54  ls
+   55  docker ps
+   56  docker run -it --name prasad6 zomoto:v3
+   57  vi Do
+   58  Vi Dockerfile
+   59  vi Dockerfile
+   60  docker ps -a
+   61  docker inspect prasad1
+   62  docker build -t zomoto:v4 .
+   63  docker run -itd  --name prasad6 zomoto:v4
+   64  docker run -itd  --name prasad7 zomoto:v4
+   65  docker inspect prasad7
+   66  docker inspect prasad7 | grep -i label
+   67  docker inspect prasad7 | grep -i prasad
+   68  vi Dockerfile
+   69  docker build -t zomoto:v4 .
+   70  docker run -itd  --name prasad8 zomoto:v4
+   71  docker attach prasad8
+   72  docker attach prasad8
+   73  docker start prasad8
+   74  docker attach prasad8
+   75  dockervps
+   76  docker ps
+   77  docker attach prasad1
+   78  docker ps -a
+   79  history
