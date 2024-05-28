@@ -1,0 +1,163 @@
+TYPE                    NAME                                                    ID
+autoscaling-config      master-us-east-1a.masters.varaprasad431.k8s.local       lt-00987b82560b409f9
+autoscaling-config      nodes-us-east-1a.varaprasad431.k8s.local                lt-0cec19c20c851ddc3
+autoscaling-group       master-us-east-1a.masters.varaprasad431.k8s.local       master-us-east-1a.masters.varaprasad431.k8s.local
+autoscaling-group       nodes-us-east-1a.varaprasad431.k8s.local                nodes-us-east-1a.varaprasad431.k8s.local
+dhcp-options            varaprasad431.k8s.local                                 dopt-06f1b06187cd68c12
+iam-instance-profile    masters.varaprasad431.k8s.local                         masters.varaprasad431.k8s.local
+iam-instance-profile    nodes.varaprasad431.k8s.local                           nodes.varaprasad431.k8s.local
+iam-role                masters.varaprasad431.k8s.local                         masters.varaprasad431.k8s.local
+iam-role                nodes.varaprasad431.k8s.local                           nodes.varaprasad431.k8s.local
+instance                master-us-east-1a.masters.varaprasad431.k8s.local       i-0d439b0c730bfb406
+instance                nodes-us-east-1a.varaprasad431.k8s.local                i-088294602bd121715
+instance                nodes-us-east-1a.varaprasad431.k8s.local                i-092842dbfbcb057ec
+internet-gateway        varaprasad431.k8s.local                                 igw-0ce82be21c9a54e46
+load-balancer           api.varaprasad431.k8s.local                             api-varaprasad431-k8s-loc-ojqpq3
+route-table             varaprasad431.k8s.local                                 rtb-0267ac6e68d730065
+security-group          api-elb.varaprasad431.k8s.local                         sg-077cb9f3c2399287e
+security-group          masters.varaprasad431.k8s.local                         sg-09cc2e281b81ee820
+security-group          nodes.varaprasad431.k8s.local                           sg-0f814ab6e4e637872
+subnet                  us-east-1a.varaprasad431.k8s.local                      subnet-0f2d1718d8cc9e090
+volume                  a.etcd-events.varaprasad431.k8s.local                   vol-0666395c2e1df7187
+volume                  a.etcd-main.varaprasad431.k8s.local                     vol-075c616199815331e
+volume                  master-us-east-1a.masters.varaprasad431.k8s.local       vol-0addd335a446ab002
+volume                  nodes-us-east-1a.varaprasad431.k8s.local                vol-009b9e3de65f0df9d
+volume                  nodes-us-east-1a.varaprasad431.k8s.local                vol-0e95a0fbf906d8bce
+vpc                     varaprasad431.k8s.local                                 vpc-031ba50b57e494ffa
+
+load-balancer:api-varaprasad431-k8s-loc-ojqpq3  ok
+iam-instance-profile:masters.varaprasad431.k8s.local    ok
+autoscaling-config:lt-0cec19c20c851ddc3 ok
+autoscaling-config:lt-00987b82560b409f9 ok
+iam-instance-profile:nodes.varaprasad431.k8s.local      ok
+autoscaling-group:nodes-us-east-1a.varaprasad431.k8s.local      ok
+internet-gateway:igw-0ce82be21c9a54e46  still has dependencies, will retry
+autoscaling-group:master-us-east-1a.masters.varaprasad431.k8s.local     ok
+instance:i-0d439b0c730bfb406    ok
+instance:i-088294602bd121715    ok
+instance:i-092842dbfbcb057ec    ok
+iam-role:masters.varaprasad431.k8s.local        ok
+volume:vol-0e95a0fbf906d8bce    still has dependencies, will retry
+volume:vol-075c616199815331e    still has dependencies, will retry
+volume:vol-0666395c2e1df7187    still has dependencies, will retry
+subnet:subnet-0f2d1718d8cc9e090 still has dependencies, will retry
+volume:vol-009b9e3de65f0df9d    still has dependencies, will retry
+volume:vol-0addd335a446ab002    still has dependencies, will retry
+iam-role:nodes.varaprasad431.k8s.local  ok
+security-group:sg-0f814ab6e4e637872     still has dependencies, will retry
+security-group:sg-077cb9f3c2399287e     still has dependencies, will retry
+security-group:sg-09cc2e281b81ee820     still has dependencies, will retry
+Not all resources deleted; waiting before reattempting deletion
+        security-group:sg-09cc2e281b81ee820
+        volume:vol-0addd335a446ab002
+        dhcp-options:dopt-06f1b06187cd68c12
+        security-group:sg-0f814ab6e4e637872
+        volume:vol-009b9e3de65f0df9d
+        security-group:sg-077cb9f3c2399287e
+        volume:vol-075c616199815331e
+        internet-gateway:igw-0ce82be21c9a54e46
+        volume:vol-0e95a0fbf906d8bce
+        route-table:rtb-0267ac6e68d730065
+        subnet:subnet-0f2d1718d8cc9e090
+        volume:vol-0666395c2e1df7187
+        vpc:vpc-031ba50b57e494ffa
+volume:vol-075c616199815331e    still has dependencies, will retry
+volume:vol-009b9e3de65f0df9d    still has dependencies, will retry
+volume:vol-0addd335a446ab002    still has dependencies, will retry
+volume:vol-0666395c2e1df7187    still has dependencies, will retry
+volume:vol-0e95a0fbf906d8bce    still has dependencies, will retry
+internet-gateway:igw-0ce82be21c9a54e46  still has dependencies, will retry
+subnet:subnet-0f2d1718d8cc9e090 still has dependencies, will retry
+security-group:sg-077cb9f3c2399287e     still has dependencies, will retry
+security-group:sg-0f814ab6e4e637872     still has dependencies, will retry
+security-group:sg-09cc2e281b81ee820     still has dependencies, will retry
+Not all resources deleted; waiting before reattempting deletion
+        security-group:sg-077cb9f3c2399287e
+        volume:vol-075c616199815331e
+        security-group:sg-0f814ab6e4e637872
+        volume:vol-009b9e3de65f0df9d
+        volume:vol-0e95a0fbf906d8bce
+        route-table:rtb-0267ac6e68d730065
+        internet-gateway:igw-0ce82be21c9a54e46
+        volume:vol-0666395c2e1df7187
+        vpc:vpc-031ba50b57e494ffa
+        subnet:subnet-0f2d1718d8cc9e090
+        dhcp-options:dopt-06f1b06187cd68c12
+        security-group:sg-09cc2e281b81ee820
+        volume:vol-0addd335a446ab002
+volume:vol-075c616199815331e    still has dependencies, will retry
+volume:vol-0addd335a446ab002    still has dependencies, will retry
+volume:vol-0666395c2e1df7187    still has dependencies, will retry
+volume:vol-0e95a0fbf906d8bce    still has dependencies, will retry
+volume:vol-009b9e3de65f0df9d    still has dependencies, will retry
+internet-gateway:igw-0ce82be21c9a54e46  still has dependencies, will retry
+subnet:subnet-0f2d1718d8cc9e090 still has dependencies, will retry
+security-group:sg-09cc2e281b81ee820     still has dependencies, will retry
+security-group:sg-0f814ab6e4e637872     still has dependencies, will retry
+security-group:sg-077cb9f3c2399287e     ok
+Not all resources deleted; waiting before reattempting deletion
+        route-table:rtb-0267ac6e68d730065
+        internet-gateway:igw-0ce82be21c9a54e46
+        volume:vol-0e95a0fbf906d8bce
+        subnet:subnet-0f2d1718d8cc9e090
+        volume:vol-0666395c2e1df7187
+        vpc:vpc-031ba50b57e494ffa
+        dhcp-options:dopt-06f1b06187cd68c12
+        security-group:sg-09cc2e281b81ee820
+        volume:vol-0addd335a446ab002
+        security-group:sg-0f814ab6e4e637872
+        volume:vol-009b9e3de65f0df9d
+        volume:vol-075c616199815331e
+volume:vol-0e95a0fbf906d8bce    ok
+volume:vol-009b9e3de65f0df9d    ok
+volume:vol-0addd335a446ab002    still has dependencies, will retry
+volume:vol-075c616199815331e    still has dependencies, will retry
+internet-gateway:igw-0ce82be21c9a54e46  still has dependencies, will retry
+volume:vol-0666395c2e1df7187    still has dependencies, will retry
+subnet:subnet-0f2d1718d8cc9e090 still has dependencies, will retry
+security-group:sg-0f814ab6e4e637872     still has dependencies, will retry
+security-group:sg-09cc2e281b81ee820     still has dependencies, will retry
+Not all resources deleted; waiting before reattempting deletion
+        volume:vol-0666395c2e1df7187
+        vpc:vpc-031ba50b57e494ffa
+        subnet:subnet-0f2d1718d8cc9e090
+        dhcp-options:dopt-06f1b06187cd68c12
+        security-group:sg-09cc2e281b81ee820
+        volume:vol-0addd335a446ab002
+        volume:vol-075c616199815331e
+        security-group:sg-0f814ab6e4e637872
+        route-table:rtb-0267ac6e68d730065
+        internet-gateway:igw-0ce82be21c9a54e46
+volume:vol-0addd335a446ab002    still has dependencies, will retry
+volume:vol-075c616199815331e    still has dependencies, will retry
+volume:vol-0666395c2e1df7187    still has dependencies, will retry
+subnet:subnet-0f2d1718d8cc9e090 still has dependencies, will retry
+internet-gateway:igw-0ce82be21c9a54e46  still has dependencies, will retry
+security-group:sg-09cc2e281b81ee820     still has dependencies, will retry
+security-group:sg-0f814ab6e4e637872     ok
+Not all resources deleted; waiting before reattempting deletion
+        route-table:rtb-0267ac6e68d730065
+        internet-gateway:igw-0ce82be21c9a54e46
+        vpc:vpc-031ba50b57e494ffa
+        subnet:subnet-0f2d1718d8cc9e090
+        volume:vol-0666395c2e1df7187
+        dhcp-options:dopt-06f1b06187cd68c12
+        security-group:sg-09cc2e281b81ee820
+        volume:vol-0addd335a446ab002
+        volume:vol-075c616199815331e
+volume:vol-0666395c2e1df7187    still has dependencies, will retry
+volume:vol-075c616199815331e    still has dependencies, will retry
+internet-gateway:igw-0ce82be21c9a54e46  still has dependencies, will retry
+subnet:subnet-0f2d1718d8cc9e090 still has dependencies, will retry
+volume:vol-0addd335a446ab002    still has dependencies, will retry
+security-group:sg-09cc2e281b81ee820     still has dependencies, will retry
+Not all resources deleted; waiting before reattempting deletion
+        volume:vol-075c616199815331e
+        route-table:rtb-0267ac6e68d730065
+        internet-gateway:igw-0ce82be21c9a54e46
+        subnet:subnet-0f2d1718d8cc9e090
+        volume:vol-0666395c2e1df7187
+        vpc:vpc-031ba50b57e494ffa
+        dhcp-options:dopt-06f1b06187cd68c12
+        security-group:sg-09cc2e281b81ee820
+        volume:vol-0addd335a446ab002
