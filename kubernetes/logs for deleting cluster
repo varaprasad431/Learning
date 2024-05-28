@@ -1,3 +1,4 @@
+# kops  delete cluster --name=varaprasad431.k8s.local --yes
 TYPE                    NAME                                                    ID
 autoscaling-config      master-us-east-1a.masters.varaprasad431.k8s.local       lt-00987b82560b409f9
 autoscaling-config      nodes-us-east-1a.varaprasad431.k8s.local                lt-0cec19c20c851ddc3
@@ -161,3 +162,103 @@ Not all resources deleted; waiting before reattempting deletion
         dhcp-options:dopt-06f1b06187cd68c12
         security-group:sg-09cc2e281b81ee820
         volume:vol-0addd335a446ab002
+volume:vol-0addd335a446ab002    still has dependencies, will retry
+volume:vol-0666395c2e1df7187    still has dependencies, will retry
+volume:vol-075c616199815331e    still has dependencies, will retry
+subnet:subnet-0f2d1718d8cc9e090 still has dependencies, will retry
+internet-gateway:igw-0ce82be21c9a54e46  still has dependencies, will retry
+security-group:sg-09cc2e281b81ee820     still has dependencies, will retry
+Not all resources deleted; waiting before reattempting deletion
+        subnet:subnet-0f2d1718d8cc9e090
+        volume:vol-0666395c2e1df7187
+        vpc:vpc-031ba50b57e494ffa
+        dhcp-options:dopt-06f1b06187cd68c12
+        security-group:sg-09cc2e281b81ee820
+        volume:vol-0addd335a446ab002
+        volume:vol-075c616199815331e
+        route-table:rtb-0267ac6e68d730065
+        internet-gateway:igw-0ce82be21c9a54e46
+volume:vol-075c616199815331e    still has dependencies, will retry
+volume:vol-0addd335a446ab002    still has dependencies, will retry
+volume:vol-0666395c2e1df7187    still has dependencies, will retry
+internet-gateway:igw-0ce82be21c9a54e46  still has dependencies, will retry
+subnet:subnet-0f2d1718d8cc9e090 still has dependencies, will retry
+security-group:sg-09cc2e281b81ee820     still has dependencies, will retry
+Not all resources deleted; waiting before reattempting deletion
+        volume:vol-075c616199815331e
+        route-table:rtb-0267ac6e68d730065
+        internet-gateway:igw-0ce82be21c9a54e46
+        volume:vol-0666395c2e1df7187
+        vpc:vpc-031ba50b57e494ffa
+        subnet:subnet-0f2d1718d8cc9e090
+        dhcp-options:dopt-06f1b06187cd68c12
+        security-group:sg-09cc2e281b81ee820
+        volume:vol-0addd335a446ab002
+volume:vol-075c616199815331e    still has dependencies, will retry
+volume:vol-0addd335a446ab002    still has dependencies, will retry
+volume:vol-0666395c2e1df7187    still has dependencies, will retry
+internet-gateway:igw-0ce82be21c9a54e46  still has dependencies, will retry
+subnet:subnet-0f2d1718d8cc9e090 still has dependencies, will retry
+security-group:sg-09cc2e281b81ee820     still has dependencies, will retry
+Not all resources deleted; waiting before reattempting deletion
+        route-table:rtb-0267ac6e68d730065
+        internet-gateway:igw-0ce82be21c9a54e46
+        volume:vol-0666395c2e1df7187
+        vpc:vpc-031ba50b57e494ffa
+        subnet:subnet-0f2d1718d8cc9e090
+        dhcp-options:dopt-06f1b06187cd68c12
+        security-group:sg-09cc2e281b81ee820
+        volume:vol-0addd335a446ab002
+        volume:vol-075c616199815331e
+volume:vol-075c616199815331e    still has dependencies, will retry
+volume:vol-0666395c2e1df7187    still has dependencies, will retry
+volume:vol-0addd335a446ab002    still has dependencies, will retry
+internet-gateway:igw-0ce82be21c9a54e46  still has dependencies, will retry
+subnet:subnet-0f2d1718d8cc9e090 still has dependencies, will retry
+security-group:sg-09cc2e281b81ee820     still has dependencies, will retry
+Not all resources deleted; waiting before reattempting deletion
+        volume:vol-075c616199815331e
+        internet-gateway:igw-0ce82be21c9a54e46
+        route-table:rtb-0267ac6e68d730065
+        subnet:subnet-0f2d1718d8cc9e090
+        volume:vol-0666395c2e1df7187
+        vpc:vpc-031ba50b57e494ffa
+        security-group:sg-09cc2e281b81ee820
+        volume:vol-0addd335a446ab002
+        dhcp-options:dopt-06f1b06187cd68c12
+volume:vol-0666395c2e1df7187    still has dependencies, will retry
+volume:vol-075c616199815331e    still has dependencies, will retry
+internet-gateway:igw-0ce82be21c9a54e46  still has dependencies, will retry
+volume:vol-0addd335a446ab002    still has dependencies, will retry
+subnet:subnet-0f2d1718d8cc9e090 still has dependencies, will retry
+security-group:sg-09cc2e281b81ee820     still has dependencies, will retry
+Not all resources deleted; waiting before reattempting deletion
+        volume:vol-075c616199815331e
+        route-table:rtb-0267ac6e68d730065
+        internet-gateway:igw-0ce82be21c9a54e46
+        subnet:subnet-0f2d1718d8cc9e090
+        volume:vol-0666395c2e1df7187
+        vpc:vpc-031ba50b57e494ffa
+        volume:vol-0addd335a446ab002
+        dhcp-options:dopt-06f1b06187cd68c12
+        security-group:sg-09cc2e281b81ee820
+volume:vol-0addd335a446ab002    ok
+volume:vol-075c616199815331e    ok
+volume:vol-0666395c2e1df7187    ok
+subnet:subnet-0f2d1718d8cc9e090 still has dependencies, will retry
+security-group:sg-09cc2e281b81ee820     still has dependencies, will retry
+internet-gateway:igw-0ce82be21c9a54e46  ok
+Not all resources deleted; waiting before reattempting deletion
+        dhcp-options:dopt-06f1b06187cd68c12
+        security-group:sg-09cc2e281b81ee820
+        route-table:rtb-0267ac6e68d730065
+        vpc:vpc-031ba50b57e494ffa
+        subnet:subnet-0f2d1718d8cc9e090
+subnet:subnet-0f2d1718d8cc9e090 ok
+security-group:sg-09cc2e281b81ee820     ok
+route-table:rtb-0267ac6e68d730065       ok
+vpc:vpc-031ba50b57e494ffa       ok
+dhcp-options:dopt-06f1b06187cd68c12     ok
+Deleted kubectl config for varaprasad431.k8s.local
+
+Deleted cluster: "varaprasad431.k8s.local"
