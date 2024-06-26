@@ -1,0 +1,24 @@
+question:
+how can create a infrastructre without giving the permission?
+ans: by using the --auto-approve command 
+
+variable : used to store the values
+and the values are going to change a per time.
+
+this block is used to change the values frequently
+
+TYPE1: string
+TYPE2: Number
+
+variable = instacetype{
+description ="*"
+type = string
+default = "   "
+}
+
+whenever you stop the execution of terrafrom then terraform state file is lock
+
+
+terraform plan check invalid Values
+terraform apply check invalid syntax
+
