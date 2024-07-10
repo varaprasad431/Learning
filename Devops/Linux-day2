@@ -1,0 +1,44 @@
+
+Day2:
+
+LINUX:
+open source and it is high security avilable softwear
+
+world super 500 computers are running on linux operating systenm only and 86% of smart phones using linux
+
+OS: operating sytem is bridge between user and computer componenets
+
+linux components : 
+kernel -manage hardware componets & low level os
+daemons -manages background services
+shell -used to execute user inputs(commands,programs and shell script)
+
+linux disturbution:
+which is nothing but diffenets types of linux os like redhat , ubuntu ,kali linux , center os , amaazon linux (flavours)
+
+History: 1991 - Linus torvalds 
+it is running on the c language.
+
+architecture:
+
+hardware-kernal-shell-application-user
+
+working with linux:--
+
+in linux we wan work thorugh commands only
+
+FILES commands:
+root user -admin he had super user power
+sudo -i   :to switch to root user
+ls/ll     : to list files
+touch     : to create a file
+ls\ll -a  : to see the hidden files also
+cat /more      : to view the data inside the file
+cat>file1 : to insert the content
+enter + control+d : to save the file
+cat>>file :  to insert the content more than one time into the file
+contrl+L : to clear the screen
+cp       : to copy content file to anthor file
+rm       : to remove file
+rm -f    : to remove file forcefully
+rm -f *  : to remove all files
