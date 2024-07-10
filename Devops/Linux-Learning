@@ -27,6 +27,7 @@ working with linux:--
 
 in linux we wan work thorugh commands only
 
+
 FILES commands:
 root user -admin he had super user power
 sudo -i   :to switch to root user
@@ -42,3 +43,41 @@ cp       : to copy content file to anthor file
 rm       : to remove file
 rm -f    : to remove file forcefully
 rm -f *  : to remove all files
+mv       : to move one file one to anthor
+mv       : to rename the filename also used
+touch file{1..9} : it will create multiple files at a time 
+rm -f k* : it will remove the files whose name start with k it will delete
+rm -f file{4..7} : it will remove only there files
+echo  "prasad" > prasadfile : to insert the data or text into the file prasadfile
+mkdir  : to creae directory or folder
+cd     : to change directory
+pwd    : present working direcoty
+cd ..  : to go one step back directory
+mkdir  prasad/varaprasad/yadav  : it will create the directory inside the directory
+touch prasad/prasad.txt  : it will create file isndie the directory
+
+cd ../../ : to get two dir back
+cd - : to got to privious dir
+
+yum install tree -y
+
+yum : package manager
+install : action
+tree  : to show the how many direcotryies and files in that server
+
+rm -rf : to reove the files recusivley it means delete directory if the files present inside the directory
+
+head : to print top 10 lines  - head -8 numbers
+tail : to print last 10 lines  - tail -7 numbers
+sed : to print the middle lines  -sed -n '5,13p' numbers
+
+WC filename : to count the number of charachters , words , lines , spaces
+
+
+====================================   =================
+
+terminal - it is used connect our servers
+mobxtrem
+super putty
+
+
