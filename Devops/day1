@@ -1,0 +1,47 @@
+DAY1-may1
+
+DownTIME: the amount of time which appplication is not running or when the time application is not available
+
+SERVERS:
+defination: server means which servers to the endusers what he needs.
+
+application we have multiple services all the services stored inside the the single server is called server . it is nothing but computer
+
+uses: storing ,writeing , deploy application
+
+types of server:
+web server
+application server
+database server 
+email server
+
+example in realtime scenario:
+
+use our phonepay app it is used to do the diffrent serivces then it is called server provide the users.
+
+you can use resturene example also for the server
+
+
+
+
+Virtual Machine:
+servers and vm's are diffrent work for the same purpose
+
+defination:
+a vm is program which runs on the computer that works as like spearate computer inside the main computer. vm functions as sperate resources.
+
+machine inside a machine , it means it will occupy some space inside a computer.
+
+
+vm's in clud are called virtual machines 
+ex: aws- ec2 , azure-vm's , gcp-compute engine
+
+AMI: amazon machine image it contianes os and configuration of the required.
+
+
+
+
+
+
+
+
