@@ -81,3 +81,85 @@ mobxtrem
 super putty
 
 
+==============   $$$$$$$$$$$$$$$$$$$$$$$  ==============================
+
+VIM EDITOR :  o edit he files
+
+i = used to insert the data
+esc = used to get out of the insert mode
+
+we have three modes:
+
+w:save
+q:quite
+wq : save & exit
+w! : forcefully
+
+insert mode :
+I : go to start line
+A : go to  end of line
+o : create line exits line in down
+O : create line exist line in up
+
+COMMAND MODE:-
+
+shift G : bottom of the line
+gg      : top of the line
+yy      : copies single line
+3yy     : copies 3 lines
+p       : paste the copied line
+3p      : paste the copied line for 3 times
+dd       : delete the line
+3dd      : delete the three lines
+u         : undo
+/word      : find the particular word
+:set number  : to set the numbers in the line
+:83     : to go to the 83rd line
+ 
+========== =============== =============== ============== =========== ============ ========
+FILE PERMISSIONS:-
+
+-rw-r--r-- :  user - group - others
+file types:
+-  : regurlar file
+b : blocked file
+c : character file
+d : directory file
+l : link file
+.  : hidden file
+
+
+PERMISSION: 
+types of permissions : 3 types
+read : r : 4
+write : w : 2
+executable : x : 1
+
+#giving permission methodes :
+chmod 777
+chmod u=rwx,g=rwx,o=rwx
+chmod +x
+chmod 777 *
+
+
+useradd  prasad  : to create the user
+cat /ect/passwd  : to get the list of users
+getent passwd  :  to list the users
+ls /home/       : to see the users
+cat  /etc/ group  : to get the group list
+cd /home/  : to check the user direcotry
+chown prasad file  : to  changev the ownership of the file
+chgrp prasad file : to change the owenrship of the grp
+
+chown prasad:yadav file : giving permsion of user to prasad and permission to grp of yadav
+
+
+id prasad  : to see full information about user
+
+group add prasad : to create a grp
+
+usermod -aG devops : to add user to the group
+
+userdel prasad  : to delete the user
+
+
