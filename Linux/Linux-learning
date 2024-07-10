@@ -162,3 +162,66 @@ usermod -aG devops : to add user to the group
 
 userdel prasad  : to delete the user
 
+converting user into the super users:
+-------------------- -------------
+users -root -super -normal 
+users -mainusers -createdby mainusers -normaluser
+
+root : he is admin
+super user : created by root user and can hava all permissions like root user
+normal user : created by root user but does not have super powers
+
+creating super user:
+------------
+create a user : useradd prasad
+passwd prasad : creating the passowrd for prasad user
+visudo -> go to 100 line give root to prasad 
+
+
+Note  :you are working on the non root user , you need to use sudo command before the command 
+
+su -prasad : to change from root ot prasad user
+
+to install anything it will ask password for the first time
+
+
+grep commands:
+----------------
+global regular expression print
+
+grep -i : to ignore the case senstive
+grep -v : to ignore the particulari line it will give the remaining line
+
+man grep : it will give possiable commads to use it
+
+grep 'all\|lunx' file : to search multiple words in same file
+
+
+|   : used when we are executing two commad once first command output will become input of the second command
+
+
+SED commands:
+--------
+stream editor
+
+sed  's/prasad/varaprsad/' prasadfile  in   normal
+
+sed  's/prasad/varaprsad/' prasadfile > filename  it is orginal create the file
+
+sed  's/prasad/varaprsad/;s/prasadyadav/varaprasadyadav/' prasadfile > filname : it will replace the name with multiple lines
+
+
+sed -n '3,8p' filename : give files in  that lines
+
+sed '/givthislinein that file/'
+
+:%s/   : it will replace inside the file login
+
+
+rules for SED :
+word should be perfectly
+if we miss % the only word will be replaced
+if we miss g at the last first letter in the line will bonly be changed
+:%s/linux/unix/g   : replace text
+
+
