@@ -1,0 +1,164 @@
+
+Day2:
+
+LINUX:
+open source and it is high security avilable softwear
+
+world super 500 computers are running on linux operating systenm only and 86% of smart phones using linux
+
+OS: operating sytem is bridge between user and computer componenets
+
+linux components : 
+kernel -manage hardware componets & low level os
+daemons -manages background services
+shell -used to execute user inputs(commands,programs and shell script)
+
+linux disturbution:
+which is nothing but diffenets types of linux os like redhat , ubuntu ,kali linux , center os , amaazon linux (flavours)
+
+History: 1991 - Linus torvalds 
+it is running on the c language.
+
+architecture:
+
+hardware-kernal-shell-application-user
+
+working with linux:--
+
+in linux we wan work thorugh commands only
+
+
+FILES commands:
+root user -admin he had super user power
+sudo -i   :to switch to root user
+ls/ll     : to list files
+touch     : to create a file
+ls\ll -a  : to see the hidden files also
+cat /more      : to view the data inside the file
+cat>file1 : to insert the content
+enter + control+d : to save the file
+cat>>file :  to insert the content more than one time into the file
+contrl+L : to clear the screen
+cp       : to copy content file to anthor file
+rm       : to remove file
+rm -f    : to remove file forcefully
+rm -f *  : to remove all files
+mv       : to move one file one to anthor
+mv       : to rename the filename also used
+touch file{1..9} : it will create multiple files at a time 
+rm -f k* : it will remove the files whose name start with k it will delete
+rm -f file{4..7} : it will remove only there files
+echo  "prasad" > prasadfile : to insert the data or text into the file prasadfile
+mkdir  : to creae directory or folder
+cd     : to change directory
+pwd    : present working direcoty
+cd ..  : to go one step back directory
+mkdir  prasad/varaprasad/yadav  : it will create the directory inside the directory
+touch prasad/prasad.txt  : it will create file isndie the directory
+
+cd ../../ : to get two dir back
+cd - : to got to privious dir
+
+yum install tree -y
+
+yum : package manager
+install : action
+tree  : to show the how many direcotryies and files in that server
+
+rm -rf : to reove the files recusivley it means delete directory if the files present inside the directory
+
+head : to print top 10 lines  - head -8 numbers
+tail : to print last 10 lines  - tail -7 numbers
+sed : to print the middle lines  -sed -n '5,13p' numbers
+
+WC filename : to count the number of charachters , words , lines , spaces
+
+
+====================================   =================
+
+terminal - it is used connect our servers
+mobxtrem
+super putty
+
+
+==============   $$$$$$$$$$$$$$$$$$$$$$$  ==============================
+
+VIM EDITOR :  o edit he files
+
+i = used to insert the data
+esc = used to get out of the insert mode
+
+we have three modes:
+
+w:save
+q:quite
+wq : save & exit
+w! : forcefully
+
+insert mode :
+I : go to start line
+A : go to  end of line
+o : create line exits line in down
+O : create line exist line in up
+
+COMMAND MODE:-
+
+shift G : bottom of the line
+gg      : top of the line
+yy      : copies single line
+3yy     : copies 3 lines
+p       : paste the copied line
+3p      : paste the copied line for 3 times
+dd       : delete the line
+3dd      : delete the three lines
+u         : undo
+/word      : find the particular word
+:set number  : to set the numbers in the line
+:83     : to go to the 83rd line
+ 
+========== =============== =============== ============== =========== ============ ========
+FILE PERMISSIONS:-
+
+-rw-r--r-- :  user - group - others
+file types:
+-  : regurlar file
+b : blocked file
+c : character file
+d : directory file
+l : link file
+.  : hidden file
+
+
+PERMISSION: 
+types of permissions : 3 types
+read : r : 4
+write : w : 2
+executable : x : 1
+
+#giving permission methodes :
+chmod 777
+chmod u=rwx,g=rwx,o=rwx
+chmod +x
+chmod 777 *
+
+
+useradd  prasad  : to create the user
+cat /ect/passwd  : to get the list of users
+getent passwd  :  to list the users
+ls /home/       : to see the users
+cat  /etc/ group  : to get the group list
+cd /home/  : to check the user direcotry
+chown prasad file  : to  changev the ownership of the file
+chgrp prasad file : to change the owenrship of the grp
+
+chown prasad:yadav file : giving permsion of user to prasad and permission to grp of yadav
+
+
+id prasad  : to see full information about user
+
+group add prasad : to create a grp
+
+usermod -aG devops : to add user to the group
+
+userdel prasad  : to delete the user
+
