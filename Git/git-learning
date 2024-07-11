@@ -116,4 +116,32 @@ git branch - m branchname renamebranch : to rename the branch
 
 
 
+master branch : where we have put the all code for the application then it is called master branch
+
+
+git fetch : used to show the diffrence between local and repo
+
+git pull : used to get the changes and show the data in the local
+
+git push : used to push the files from local to remote
+
+
+git stash: used to hide the files which are commited , which are not commited?  
+ans?: we need to stash the files which are not commited only . we stashed becuse we need to saved that file temperarly
+
+git stash filename
+
+git stash pop : it will get the last stash file only
+
+git stash clear : it will remove all stashed files
+
+NOte: git logs are branch independent
+
+
+git cherry-pick commit-id -of the particular log commit id : it will pick  the specific logs of at branch them.
+
+example: 
+if in branch1 one we have files like apple bannana carrot duck and brach two we have eat food diet 
+
+in the above case we need to merge branch1 merge into the branch2 with branch one specific file bananaa then you can use the cherry-pick command.
 
