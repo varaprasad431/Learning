@@ -1,0 +1,64 @@
+*****************GIT********************
+----------------------------------------:-
+
+it is a tool and git full form global information tracker is used to store the source code.
+
+version control system (or) source code management
+
+
+GIT STAGES:
+-----
+working directory : where you write source code and not track that code
+
+staging area :it is rough draft space using by git add command it means save
+
+repository : it is git folder
+by doing th git commit you can save the data on that.
+
+types of repository:
+
+local repo: local computer  .git direcotry 
+
+remote repo : git repo which write on the internet
+
+workflow:source code -> git add -> git commit-> git push or git pull to git -> git fork
+
+
+yum:package manager
+
+yum install git -y
+
+git init: intilize the empty .git repo
+git status : to see the  status of the file
+red: untracked mode
+green: tracked mode
+git add file name: it is used to staging area
+git commit -m "this is comment to show"   : to save the file into the repo
+
+git log : it  will gives  the commit history
+
+git log --oneline : to see commits on single line
+git log -2 --onleline : to show last commits and in one line
+
+TO CONFIGURE THE USERNAME & EMAIL:
+
+git config user.name "prasad"
+git config user.email "prasad@gmail.com"
+
+NOTE: old commits will not change it will remain same on tha log
+
+git ignore: to ignore some specific files it will not track and commits your files but it will keep them on your folder
+
+
+NOTE: .gitignore (. is mandatory here)
+
+vim .gitignore 
+
+files* ( here give the files name which you need to ignore files)
+
+git restore : to move back from tracking to untracking
+
+git restore --staged prasad
+
+
+
