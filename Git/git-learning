@@ -62,3 +62,58 @@ git restore --staged prasad
 
 
 
+BRANCHING:-
+----
+
+git branch : the default branch of git is master
+
+
+git branch branch name : create the new branch
+
+git branch : to list the branches on git account
+
+
+git checkout movies : to switch the branches
+
+how you know which branch you now? using green colour when you check the branch list that one is current branch
+
+
+git checkout- b brnach name : to create and switch parllely
+
+git merge : to combine branches
+
+master: the defalut brnach of the git
+
+rebase: it combine the branches but it show only the which branch it will merge
+
+
+git remote add origin : connection between local to remote repo
+
+git push  origin master 
+
+
+settings -> devloper setting -> personal -> token -> select expiration 
+
+NOTE: ACCESS TOKEN  is visible once only
+
+
+git push origin brnach name
+
+git branch -d brnach name : to delete the barnch
+
+
+git branch -D name
+
+
+git pull origin brnachname : it will pull the brnach from remote to local
+
+git revert  brnach name : to  undo the changes from the spacific at in brnach level
+
+restore : to move file to tracked to untracked
+
+
+git branch - m branchname renamebranch : to rename the branch
+
+
+
+
