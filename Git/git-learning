@@ -145,3 +145,32 @@ if in branch1 one we have files like apple bannana carrot duck and brach two we 
 
 in the above case we need to merge branch1 merge into the branch2 with branch one specific file bananaa then you can use the cherry-pick command.
 
+git merge conflicts:
+it is going to happen when you merge two diffrent branches same filenames 
+
+
+NOTE: manaually solve the merge conflict remove the unwanted code and save the code remaining
+
+
+git clone : in git level is used to took the source code from the local
+
+git fork : in github level is used to took source code from other github user 
+
+NOTE: for fork an clone repo must be  public
+
+
+danzer zone :
+change the visisbiliy to public to private
+
+transfer repository
+
+
+archive :hideing the  repo 
+
+
+git diff : it is used to show the which file is not attahed to commit
+
+git show commit id : it is used to show the which file is attached to commit
+
+
+
