@@ -1,0 +1,86 @@
+
+MAVEN;
+
+it project management tool for application devlopment
+
+pom: project object model 
+xml : extensiable markup language 
+pom 
+metadata : data about data
+dependencies
+kindoutput
+kind of project
+discription
+
+
+	NOTE: ONE PROJECT CONTIANINS ONLY ONE WORKSPACE EACH WORKSPACE CONSISTS OF ONE pom.XML FILES
+
+
+MAVEN i a build tool and manage dependencies.
+
+MAVEN  is mainly for the build tool for java code for java project.
+
+what is main file of maven : pom.xml
+what is home directory : .m2
+
+	note:
+project home directory is diffrenet and maven home directory is diffrenet
+
+when .java file is converted it will became . CLASS
+
+JAVA --> COMPILE --> .CLASS --> COMPRESS -->JAR
+
+JAVA =RAW CODE
+.CLASS = EXECUTABLE FILE
+.JAR = GROUP OF .CLASS FILES
+
+JAR(JAVA ACHAVIE) = BACKEND
+WAR (WEB ARCHIVE) = FRONT+BACKEND
+EAR(ENTERPRISE ARCHIVE) = JAR+WAR
+
+    ****NOTE****
+TO WORK WITH MAVEN NEED TO ISNTALL JAVA VERSION 1.8.0
+
+
+IN MAVEN goals are nothing but commands.
+
+
+
+####Practical part############
+create a server -ec2 instnace
+
+dlcdn.apache.org -> maven  -> binaries -> tar.gz 
+
+wget link
+
+install java -> yum install java-1.8.0 openjdk 
+yum install maven -y
+
+
+mvn archetype:genarate
+
+yum install tree
+
+open pom.xml  see the mvn compiler
+
+maven life cycle - mvn clean package
+mvn complie
+mvn test
+mvn test
+mvn package
+mvn install
+mvn deploy - for this springboot is required
+mvn clean
+
+1.what is maven why it is ?
+2. what is maven ome direcotry
+3.what is pom.xml 
+4.what is maven life cycle and goals
+5.what is maven denependcies
+6.what is diffrence between ant and maven 
+
+plugin : it is a small softwear which automates our tasks
+
+
+
+
