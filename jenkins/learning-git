@@ -1,0 +1,142 @@
+it is CI/CD tool which it is available on the internet that means it is open source written in java 
+
+CONTINUES INTEGRATION : build + test
+advantage's: before time is wasting and manual work is high 
+
+DEPLOYMENT: the process of installing web application into the server
+
+CONTINUES DELIVERY:  if the deployment  to the production  is manual then it is called continues delivery
+CONTINUES DEPLOYMENT : if the deployment to the production is automated then it is called continues deployment
+ex: here if you change the code anything in source then it will trigger and it will automatically tested ,build and deploy on the production.
+
+PIPELINE: step by step execution of the process is called pipeline.
+                       or
+          series of events are interlink at each other is called pipeline
+
+UAT(USER ACCEPTANCE TESTING)
+PROD
+QA
+DEV->QA->UAT->PROD
+developer->testers->client->end-user
+
+plugin: small software which is automates our small work or manual work
+
+CI/CD: whenever a developer write code , we integrate all the code at the developer at any point in the time and we build ,test and delivery/deploy it to client.
+
+ADVANATAGES:
+* master-slave architecture 
+* write your own plugin ,can use the community plugin
+* easy to understand what process going on
+
+
+	*********JENKINS SETUP********
+STEP1: getting Jenkins repo from the Jenkins.io
+STEP2: installing java11(java11 or 17) because it supports only that version 
+       java --version
+STEP3: installing git, maven, Jenkins
+       yum install git ,maven ,Jenkins -y
+STEP4: restarting Jenkins
+    
+NOTE: whenever you download any service on the Linux by defautly it will be on the stopped state.
+    systemctl restart Jenkins.service
+
+STEP5: connecting to Jenkins dashboard using IP or DNS of aws ec2 instance 
+
+NOTE:  Jenkins default port is 8080
+
+
+TROUBLESHOOT PART:
+if face anything error then check in security group is 8080 are there or not
+check the the service is running or not in server(ec2)
+check the java version
+
+
+
+Jenkins.sh
+
+sudo yum update –y
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+
+sudo yum upgrade
+
+sudo dnf install java-17-amazon-corretto -y
+
+
+sudo yum install jenkins -y
+
+
+sudo systemctl enable jenkins
+ 
+sudo systemctl start jenkins
+
+sudo systemctl status Jenkins
+
+
+
+
+	JENKINS ENVINORMENT VARIABLES****
+--------------------  ------------ 
+these variables are defined by the Jenkins defaultLy.
+
+variable types:
+1. user defined variables:
+   a. Local variables : which works inside the job only and case sensitive 
+   b. global variables : works any where
+2. Jenkins environment variables
+
+
+
+NOTE:  user defined variables are not work for some properties of Jenkins 
+
+*** Jenkins environment variables are going to change for every build
+
+note: 
+users will not define java environment variable 
+
+Jenkins email: when trigger pipeline it will trigger mail to team.once it is finished.
+
+PARAMETERS:
+in Jenkins lot of the parameters used to acknowledge.
+
+use of the parameters /:- to acknowledge build is build by the extract information 
+
+types of the parameters:
+---  ---
+1. choice parameters : to give list of parameters
+2. string parameters : when you want pass variable directly (you have choice to enter values whatever you want)
+
+NOTE: IN choice parameters need to define input values but in string parameter is no need to give values
+
+3. multi string : string pass one line but multi string pass multiple lines
+4. file parameter : if you want use local computer files then use this parameters
+5. Boolean parameters (TRUE OR FALASE): it is used for you using the db or not need to contribution in that pipeline.
+
+THROTTLE BUILD: to restrict the number of builds in a job.
+
+BUILD TRIGGERS:
+
+trigger builds remotely (ex;from scripts)
+jenkinsurl/job/jobname/...=authentication token
+example:
+http://3.81.61.47:8080/job/job1//build?token=abc
+
+
+LINKED JOBS:  jobs are linked with each other jobs 
+types of : UPSTREAM JOBS 
+           DOWN STREAM JOBS 
+
+
+
+PASWWORDLESS LOGIN FOR JENKINS:
+====
+
+cd /var/lib/Jenkins 
+vim config.xml
+go to line 7 change to false then you will easily login without password for you Jenkins.
+
+
+PIPELINE AS CODE:  all commands in single line.
+
