@@ -140,3 +140,149 @@ go to line 7 change to false then you will easily login without password for you
 
 PIPELINE AS CODE:  all commands in single line.
 
+PIPLINE: sequence of all commands which is run in Linux are placed at one files executed one by one is called pipeline 
+
+or 
+
+pipeline is combination of the plugins that supports integration and implementation of continues delivery pipelines .
+
+pipeline is a group of event with inter linked with each other.
+
+TYPES OF PIPELINES:
+1. DECLARTIVE and  2.SCRIPTED PIPELINES
+
+DECLARTIVE PIPELINE: which the syntax took long steps is called declarative mean which is the steps easily understood.
+syntax:
+
+pipeline {
+   any agent
+     stages{
+      stage("hello"){
+        steps{
+           sh 'touch file1'
+ }
+}
+}
+}
+
+SCRIPTED PIPELINE: which is the syntax took short steps is called scripted which mean it took time or difficult to understand the steps to beginner.
+syntax:
+
+node {
+   stage("stage1"){
+       echo "hello"
+}
+
+
+# in the pipeline we have choice to  pass the parameters 
+
+parameters{
+  string(name: passion, defaultvalue:prasad',description:"baagunava")
+  choice("      "        "         "  "            " )
+
+
+above one is not come with the first job build it will came after the first build
+
+
+
+INTEGRATE GIT WITH JENKINS:
+------ ---------- -------
+pipeline{
+   any agent
+     stages {
+        stage ("checkout") {
+          steps{
+            'git url.com'
+           }
+        stage ("complie"){
+          steps{
+            sh 'lscpu'
+        }
+     }
+  }
+
+
+
+input parameters:it will hold the pipeline because they will check the parameters 
+
+
+MASTER & SLAVES :
+---- ---- ----
+to distribute the work load
+LABELS:  to assign the work particular slave
+USES: 
+Schedule the jobs 
+store the builds 
+send the build to slave server
+
+
+SETUP SLAVE:
+1.create a server an install java-11
+2. configure agent
+dashboard-manage jenkins-nodes-newnode
+3. number of executors : 3 remote root directory:/tmp
+lables: prod 
+hostname:private-ip of slave
+crendentials - sshusername with privatekey : pem file 
+hostkey verification stategy: non verify
+online agent as much as possible
+
+* restrict where this project execute give label (here) prod
+
+NOTE: when the master node is offline check the diskspace (to remove files and foldrs in the path  var/lib/jenkin/workspaceor /tmp )and make space for them  after click on the back to node online
+
+
+postbuild:
+---------
+action that happens after the build
+
+always: 
+-----
+when the build is success or falure
+
+success:
+-----
+if the build succesfull
+
+failure:
+
+if the build failure
+-----
+
+
+cd /var/lib/Jenkins/workspaces
+
+
+RABC: ROLE BASE ACCESS CONTROL:
+-------------------------
+dowanooad - rbabc plugin in Jenkins 
+
+*** if we will give the access of resource with role based access by assuming roles to users.
+
+*PIPELINE BUILDING:
+------
+JOB views:
+to separate the free style jobs and pipeline types.
+
+&&&&IMP concepts &&&&&:
+---------  ---------
+*CRON JOB:
+TO schedule the work 
+cron sysntax : * * * * *(mintues hours date month dayoftheweek) 
+
+* the source code is not changed
+
+*POLL SCM: 
+ to solve cronjob error(disadvantage)
+it will trigger the build when the source code changes anything
+
+*WEBHOOKS:
+ it will trigger  the build immediately  not like poll scm
+
+* permalinks:
+it will show the configuration of the Jenkins builds
+
+ 
+
+
+
