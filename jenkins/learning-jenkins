@@ -74,8 +74,16 @@ sudo systemctl start jenkins
 
 sudo systemctl status Jenkins
 
+*** CUSTOM WORKSPACE***:
+----
+mkdir -p tcs/jenkinsbuilds
+cd /
+chown jenkins:jenkins /root/ -R
 
+execute commands
+build steps  --. execute shell
 
+ 
 
 	JENKINS ENVINORMENT VARIABLES****
 --------------------  ------------ 
