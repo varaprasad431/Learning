@@ -28,6 +28,18 @@ vim config.xml
 
   <useSecurity>true</useSecurity>
   <useSecurity>false</useSecurity>
+7.pipeline
+scripted 
+declarative
+
+8.pipeline as a code
+single line 
+multi line
+
+9.INTEGRATE GIT WITH JENKINS
+
+10. Input Parameter
+
 
 it is CI/CD tool which it is available on the internet that means it is open source written in java 
 
@@ -223,7 +235,27 @@ parameters{
 
 above one is not come with the first job build it will came after the first build
 
-
++++++PIPELINE+++++
+pipeline {
+    agent any
+    environment {
+        name = "learning"
+        scope = "earning"
+    }
+    stages {
+        stage('aim') {
+            steps { 
+                sh '''
+                echo this $name  is for the purpose of $scope'''
+            }
+        }
+        stage('result') {
+            steps {
+                sh 'lscpu > priview.txt'
+            }
+        }
+    }
+}
 
 INTEGRATE GIT WITH JENKINS:
 ------ ---------- -------
