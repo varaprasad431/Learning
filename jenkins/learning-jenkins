@@ -1,3 +1,34 @@
+INDEX:
+Jenkins:
+1.variables:
+user defined
+global & local
+Jenkins env variables
+
+2.Parameters:
+choice
+string
+multi string
+file
+Boolean
+
+3.Throttle builds: restrict the builds
+
+4.build triggers: build remotely
+
+5.Linked Jobs : jobs are linked to each other jobs
+UPSTREAM Job
+DOWNSTREAM Job
+
+6.PASWWORDLESS LOGIN FOR JENKINS:
+====
+
+cd /var/lib/Jenkins 
+vim config.xml
+
+  <useSecurity>true</useSecurity>
+  <useSecurity>false</useSecurity>
+
 it is CI/CD tool which it is available on the internet that means it is open source written in java 
 
 CONTINUES INTEGRATION : build + test
@@ -93,9 +124,10 @@ variable types:
 1. user defined variables:
    a. Local variables : which works inside the job only and case sensitive 
    b. global variables : works any where
+Dashboard --. manage jenkins --. configure system --. global properties -->  Envronment variables --> add
 2. Jenkins environment variables
 
-
+these var are defined by jenkins by defaultly
 
 NOTE:  user defined variables are not work for some properties of Jenkins 
 
