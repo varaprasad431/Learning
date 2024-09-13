@@ -1,0 +1,48 @@
+WEB application :
+-------
+ it means we can access the applicatiopn from the web it is called web application
+
+Deployent : installing web application on the server is called deployment
+
+
+Dev >> github >> jenkins >> TOMCAT//APPLICATION
+
+1.create 2 instances master & slave
+2. jenkins setup in master (install only epel,java11 $ jenkins
+sudo yum install java-11-amazon-corretto-devel -y
+install jenikis >> repo >> install java >>run the command to install the jenkins
+3.install the plugin (deploy to container)
+4.install java-openjdk-11 in slave
+5. setup agent in master
+6.install git ,maven and java 1.8.0 openjdk in master and slave(update-alternatives-config for java)
+update-alternative --config java ( to change the version in the system)
+7. get the source code from the github
+https://github.com/devopsbyraham/jenkins-java-project.git
+8. goto jenkins >> build step>> invoke top level maven tagets >> clean package >> build now
+9. go to slave and install tomcat(https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.74/bin/apache-tomcat-9.0.74tar.gz)
+.tar -zxvf file_name
+goto apachefolder
+vim webapps/manager/META-INF/context.xml
+<Value className="org.apache.catalina.valves.RemoteAddrValue"
+      allocw="127\.d+\.+d.+| ::1|0:0:0:0:0:1 />
+delete these two lines(21&22)
+10.vim conf/tomcat-users.xml
+<role rolname="manager-gui"/>
+<role rolname="manager-script"/>
+<role username="tomcat" password"tomcat" roles="manager-gui , manage-script"/>
+
+add these 3 lines at the end of the line file
+
+11.  ./bin/startup.sh
+Tomcat will get starts
+publicip:8080
+ got to the manager apps
+
+12. goto jenkkns >> add build steps >> deploy war ear to container
+
+13. add containers-9, give tomcat url and tomcat credentials (username:tomcat,password:tocmcat) [taget/*.war&/swiggy]
+
+14. post build actions >> deploy to ear/war container >> details
+
+
+
