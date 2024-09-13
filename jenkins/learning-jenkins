@@ -40,6 +40,14 @@ multi line
 
 10. Input Parameter
 
+11. Master & slave
+
+12. RABC
+
+13. job views
+
+
+
 
 it is CI/CD tool which it is available on the internet that means it is open source written in java 
 
@@ -327,7 +335,12 @@ cd /var/lib/Jenkins/workspaces
 
 RABC: ROLE BASE ACCESS CONTROL:
 -------------------------
-dowanooad - rbabc plugin in Jenkins 
+1.user --> 2 user
+2.Dashoboard  --> Manage Jenkions --> Plugin Manager --> AVSILSBLE --> Role -based Authorization Strategy
+3.Dashoboard --> maage Jenkins --> Configure Global Security --> Authorization --> Role-based Authorization
+4.Roles --> 2 Roles
+5.dowanooad - rbabc plugin in Jenkins 
+
 
 *** if we will give the access of resource with role based access by assuming roles to users.
 
