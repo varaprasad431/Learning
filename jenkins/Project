@@ -14,13 +14,14 @@ install jenikis >> repo >> install java >>run the command to install the jenkins
 3.install the plugin (deploy to container)
 4.install java-openjdk-11 in slave
 5. setup agent in master
-6.install git ,maven and java 1.8.0 openjdk in master and slave(update-alternatives-config for java)
-update-alternative --config java ( to change the version in the system)
+6.install git ,maven and java 1.8.0 openjdk in master and slave(update-alternatives-config for java) || "https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/amazon-linux-install.html"
+update-alternatives --config java ( to change the version in the system)
 7. get the source code from the github
+https://github.com/MrGill88/Hello-world
 https://github.com/devopsbyraham/jenkins-java-project.git
 8. goto jenkins >> build step>> invoke top level maven tagets >> clean package >> build now
 9. go to slave and install tomcat(https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.74/bin/apache-tomcat-9.0.74tar.gz)
-.tar -zxvf file_name
+tar -zxvf file_name
 goto apachefolder
 vim webapps/manager/META-INF/context.xml
 <Value className="org.apache.catalina.valves.RemoteAddrValue"
