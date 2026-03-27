@@ -1,9 +1,11 @@
 name: ci/cd for dockerized flask app test
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches: 
+      - main
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
